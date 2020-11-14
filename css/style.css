@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,59 +6,136 @@
           box-sizing: border-box;
 }
 
+.reserve h1 {
+  padding-bottom: 15px;
+}
+
+.reserve p {
+  padding-bottom: 15px;
+  color: grey;
+  font-size: 1.5em;
+}
+
 #use {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-ol button {
-  background-color: #F2F2F2;
-  font-weight: bold;
-  font-size: 1.2em;
-  border-radius: 25px;
-  -webkit-box-shadow: 0 10px 20px #aaafa8dc;
-          box-shadow: 0 10px 20px #aaafa8dc;
-  padding: 15px;
-  margin: 5px 0px 5px 60px;
-  border: 1px solid #ccc;
+.search {
+  font-family: Roboto, FontAwesome, 'Material Icons';
+}
+
+.reserve {
+  text-align: center;
+  line-height: 2em;
+}
+
+.reserve .explore {
+  padding: 15px 30px 15px 30px;
+  color: white;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  margin: 20px;
+}
+
+.reserve .explore:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container {
+  background: #F2F2F2;
+  padding-bottom: 30px;
 }
 
 body {
   max-width: 1400px;
   width: 100%;
   margin: auto;
-  font-family: '',sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-size: 15px;
   margin-right: 20px;
   line-height: 20px;
 }
 
-button {
+#use button {
   width: 350px;
+  background-color: #F2F2F2;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin: 10px auto 10px auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 10px 20px #aaafa8dc;
+          box-shadow: 0 10px 20px #aaafa8dc;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+#use button span {
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 0.2em 0.4em;
+  color: white;
+  margin: 0 20px 0 -80px;
+}
+
+#search {
+  position: relative;
+  background: #e2dedee5;
+  border-top: 5px solid #a1a1a1a4;
+  margin-bottom: 40px;
+}
+
+#search input {
+  width: 100%;
+  height: 60px;
+  background: none;
+  border: none;
+  margin: 0 auto 0 auto;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#search input::-webkit-input-placeholder {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #666464;
+}
+
+#search input:-ms-input-placeholder {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #666464;
+}
+
+#search input::-ms-input-placeholder {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #666464;
+}
+
+#search input::placeholder {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #666464;
 }
 
 #logo {
   width: 50%;
-  padding: 10px;
-  margin-left: 100px;
-}
-
-ol i {
-  color: #7b7d81;
-  height: 45px;
-  width: 45px;
-  background-color: #F2F2F2;
-  padding: 13px;
-}
-
-.element {
-  width: 100%;
-  height: 200px;
-  -webkit-box-shadow: 0 10px 20px #3ba31cdc;
-          box-shadow: 0 10px 20px #3ba31cdc;
-  border-radius: 20px;
-  color: black;
-  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 img {
@@ -75,7 +153,16 @@ section {
   background-color: #F2F2F2;
   margin-bottom: 40px;
   width: 100%;
-  height: 1000px;
+}
+
+section .element {
+  -webkit-box-shadow: 0 10px 20px #858685dc;
+          box-shadow: 0 10px 20px #858685dc;
+  border-radius: 20px;
+  color: black;
+  margin: 20px 10px 20px 10px;
+  gap: 40px;
+  height: 300px;
 }
 
 h2 {
@@ -94,16 +181,35 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: black;
   padding: 20px;
   display: block;
-  text-decoration: none;
-  color: black;
+  color: white;
   margin-top: 10px;
 }
 
-footer__a {
+footer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 20%;
+  padding-bottom: 10px;
+}
+
+footer a {
   display: block;
+  padding: 5px;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+footer a i {
+  padding-right: 8px;
+}
+
+article .element {
+  background: #b83232;
+  margin: 20px 10px 20px 10px;
+  border-radius: 20px;
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */
