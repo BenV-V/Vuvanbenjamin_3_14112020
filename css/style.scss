@@ -25,6 +25,14 @@ $background:#e2dedee5;
 .search {
     font-family: Roboto, FontAwesome, 'Material Icons';
   }
+  header{
+      display: flex;
+      align-items: center;
+      i{
+          padding-left: 20px;
+          color:black;
+      }
+  }
 .reserve{
     text-align: center;
     line-height: 2em;
@@ -118,15 +126,31 @@ section{
         border-radius: 20px;
         color:black;
 		margin:20px 10px 20px 10px;
-        gap: 40px;
-        height: 300px;
+        height: 200px;
+        #description{
+            padding: 7px 20px 0 10px;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            color:black;
+        }
+        i{
+            position: absolute;
+            right:0;
+            padding-right: 25px;
+            font-size: 1.3em;
+            &.active{
+                color:$primary-color;
+            }
+        }
     }
 }
 h2{
     padding: 20px;
 }
 a:link{ 
-	text-decoration:none;
+    text-decoration:none;
+    color:black;
 } 
 footer{
     display: flex;
@@ -151,6 +175,9 @@ footer{
         }
     }
 }
+a:link{ 
+	text-decoration:none;
+} 
 article{
     .element{
         background: #b83232;

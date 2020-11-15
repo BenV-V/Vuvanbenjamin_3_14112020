@@ -25,6 +25,20 @@
   font-family: Roboto, FontAwesome, 'Material Icons';
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header i {
+  padding-left: 20px;
+  color: black;
+}
+
 .reserve {
   text-align: center;
   line-height: 2em;
@@ -161,8 +175,32 @@ section .element {
   border-radius: 20px;
   color: black;
   margin: 20px 10px 20px 10px;
-  gap: 40px;
-  height: 300px;
+  height: 200px;
+}
+
+section .element #description {
+  padding: 7px 20px 0 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+}
+
+section .element i {
+  position: absolute;
+  right: 0;
+  padding-right: 25px;
+  font-size: 1.3em;
+}
+
+section .element i.active {
+  color: #9356DC;
 }
 
 h2 {
@@ -171,6 +209,7 @@ h2 {
 
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -204,6 +243,10 @@ footer a {
 
 footer a i {
   padding-right: 8px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 article .element {
