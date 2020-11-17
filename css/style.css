@@ -206,6 +206,17 @@ section .element {
   height: 200px;
 }
 
+section .element img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
 section .element span {
   position: absolute;
   margin-left: -100px;
@@ -243,17 +254,6 @@ section .element i {
 
 section .element i.active {
   color: #9356DC;
-}
-
-img {
-  width: 100%;
-  height: 70%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
 }
 
 h2 {
@@ -304,6 +304,15 @@ footer a span {
 }
 
 /* Article */
+.images {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 article {
   background-color: #F2F2F2;
   border-top-left-radius: 45px;
@@ -339,6 +348,49 @@ article .element {
   -webkit-box-shadow: 0 10px 20px #858685dc;
           box-shadow: 0 10px 20px #858685dc;
   border-radius: 20px;
-  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .element .describe {
+  width: 100%;
+  margin: 10px;
+}
+
+article .element :hover + .box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #b9dbb9;
+}
+
+article .element :hover + .box span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin: 15px 20px 0 10px;
+}
+
+.box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.box span {
+  display: inline-block;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: -webkit-transform 300ms ease-out 100ms;
+  transition: -webkit-transform 300ms ease-out 100ms;
+  transition: transform 300ms ease-out 100ms;
+  transition: transform 300ms ease-out 100ms, -webkit-transform 300ms ease-out 100ms;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=style.css.map */
