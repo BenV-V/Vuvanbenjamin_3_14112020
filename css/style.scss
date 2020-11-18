@@ -14,7 +14,7 @@ a:link{
 	text-decoration:none;
 } 
 body {
-	max-width: 1400px;
+	max-width: 100%;
 	width:100%;
 	margin:auto;
 	font-family: 'Roboto',sans-serif;
@@ -32,10 +32,14 @@ header{
       }
 }
 #logo{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     padding: 20px;
+    img{
+        width: 50%;
+        margin:auto;
+        padding: auto;
+        display: block;
+    }
 }   
 /* Top page */
 .container{
@@ -251,6 +255,9 @@ article{
         box-shadow: 0 10px 20px #858685dc;
         border-radius: 20px;
         display: flex;
+        animation-name: element;
+        animation-duration: 1000ms;
+        transform-origin: bottom;
         .describe{
             width:100%;
             margin: 10px;
@@ -276,5 +283,23 @@ article{
         transform: translateX(150%);
         transition: transform 300ms ease-out 100ms;
         filter:invert(1);
+    }
+}
+@keyframes element{
+    0% {
+        transform: scaleY(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleY(.18);
+    }
+    24% {
+        transform: scaleY(.4);
+    }
+    46% {
+        transform: scaleY(.81);
+    }
+    100% {
+        transform: scaleY(1);
     }
 }
