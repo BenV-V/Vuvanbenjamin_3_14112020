@@ -22,6 +22,54 @@ body {
 	margin-right: 20px;
 	line-height: 20px;
 }
+#loading{
+    width: 100px;
+    height:100px;
+    border: 5px solid $third-color;
+    border-top-color: $primary-color;
+    border-radius: 100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    animation: round 2s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes round{
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(324deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+.page{
+    animation: page 2s;
+}
+@keyframes page{
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Header */
     header{
       display: flex;
@@ -291,8 +339,9 @@ article{
         border-radius: 20px;
         display: flex;
         animation-name: element;
-        animation-duration: 1000ms;
-        transform-origin: bottom;
+        animation-duration: 800ms;
+        transition: margin-bottom 2s;
+        transform-origin: top;
         &:hover {
             background-color: lighten(#F2F2F2, 2);
             box-shadow: 0 15px 30px #858685dc;
@@ -300,6 +349,9 @@ article{
         .describe{
             width:100%;
             margin: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
         :hover + .box {
             transform: scale(1);
@@ -328,15 +380,6 @@ article{
     0% {
         transform: scaleY(0);
         opacity: .1;
-    }
-    17% {
-        transform: scaleY(.18);
-    }
-    24% {
-        transform: scaleY(.4);
-    }
-    46% {
-        transform: scaleY(.81);
     }
     100% {
         transform: scaleY(1);

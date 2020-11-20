@@ -22,6 +22,99 @@ body {
   line-height: 20px;
 }
 
+#loading {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #99E2D0;
+  border-top-color: #9356DC;
+  border-radius: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: round 2s linear;
+          animation: round 2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.page {
+  -webkit-animation: page 2s;
+          animation: page 2s;
+}
+
+@-webkit-keyframes page {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes page {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Header */
 header {
   display: -webkit-box;
@@ -419,10 +512,12 @@ article .element {
   display: flex;
   -webkit-animation-name: element;
           animation-name: element;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-transition: margin-bottom 2s;
+  transition: margin-bottom 2s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 article .element:hover {
@@ -434,6 +529,9 @@ article .element:hover {
 article .element .describe {
   width: 100%;
   margin: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 article .element :hover + .box {
@@ -478,18 +576,6 @@ article .element :hover + .box span {
             transform: scaleY(0);
     opacity: .1;
   }
-  17% {
-    -webkit-transform: scaleY(0.18);
-            transform: scaleY(0.18);
-  }
-  24% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-  }
-  46% {
-    -webkit-transform: scaleY(0.81);
-            transform: scaleY(0.81);
-  }
   100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
@@ -501,18 +587,6 @@ article .element :hover + .box span {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
     opacity: .1;
-  }
-  17% {
-    -webkit-transform: scaleY(0.18);
-            transform: scaleY(0.18);
-  }
-  24% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-  }
-  46% {
-    -webkit-transform: scaleY(0.81);
-            transform: scaleY(0.81);
   }
   100% {
     -webkit-transform: scaleY(1);
