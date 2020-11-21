@@ -155,22 +155,26 @@ header{
 #use{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+#use{
     padding-bottom: 25px;
+    display: flex;
+    align-items: center;
     button{
-        width: 350px;
-        background-color: #F2F2F2;
-	    font-weight: bold;
-        font-size: 1.2em;
-        display: flex;
-        margin: 15px auto 25px auto;
-        border-radius: 25px;
-        box-shadow: 0 5px 10px #d7dad6dc;
-        padding: 20px;
-        border:none;
-        align-items: center;
-        &:hover {
-            opacity:(0.80);
-        }
+    width: 23%;
+    background-color: #F2F2F2;
+	font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    margin: 15px auto 25px auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px #d7dad6dc;
+    padding: 20px;
+    border:none;
+    align-items: center;
+    &:hover {
+        opacity:(0.80);
+    }
         span{
             background-color: $primary-color;
             border-radius: 100%;
@@ -185,11 +189,14 @@ header{
             color:rgb(167, 166, 166);
             &.active{
             color: $primary-color;
-            }
         }
     }
 }
+}
 /* Restaurant - Section */
+#restaurants{
+    display: flex;
+}
 section{
     background-color: #F2F2F2;
     margin-bottom: 40px;
@@ -201,8 +208,9 @@ section{
         box-shadow: 0 10px 20px #858685dc;
         border-radius: 20px;
         color:black;
-		margin:20px 20px 20px 20px;
-        height: 300px;
+        margin:20px 20px 20px 20px;
+        width: 90%;
+        height: 500px;
         &:hover {
             opacity:(0.90);
             box-shadow: 0 15px 30px #858685dc;
@@ -240,13 +248,10 @@ section{
             } 
         }
         i{
-            position: absolute;
-            right:0;
-            padding-right: 55px;
-            margin-top: -20px;
             font-size: 1.4em; 
             &.inactive{
                 opacity:0;
+                margin-top: -25px;
                 &:hover{
                 animation-name: heart;
                 color:$primary-color;

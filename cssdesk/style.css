@@ -242,11 +242,20 @@ header i {
 #use {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#use {
   padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #use button {
-  width: 350px;
+  width: 23%;
   background-color: #F2F2F2;
   font-weight: bold;
   font-size: 1.2em;
@@ -288,6 +297,12 @@ header i {
 }
 
 /* Restaurant - Section */
+#restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 section {
   background-color: #F2F2F2;
   margin-bottom: 40px;
@@ -304,7 +319,8 @@ section .element {
   border-radius: 20px;
   color: black;
   margin: 20px 20px 20px 20px;
-  height: 300px;
+  width: 90%;
+  height: 500px;
 }
 
 section .element:hover {
@@ -359,15 +375,12 @@ section .element .description:link {
 }
 
 section .element i {
-  position: absolute;
-  right: 0;
-  padding-right: 55px;
-  margin-top: -20px;
   font-size: 1.4em;
 }
 
 section .element i.inactive {
   opacity: 0;
+  margin-top: -25px;
 }
 
 section .element i.inactive:hover {
