@@ -245,6 +245,10 @@ header i {
   padding-bottom: 25px;
 }
 
+#use h2 {
+  font-size: 1.8em;
+}
+
 #use button {
   width: 350px;
   background-color: #F2F2F2;
@@ -296,6 +300,7 @@ section {
 
 section h2 {
   padding-top: 60px;
+  font-size: 1.8em;
 }
 
 section .element {
@@ -486,6 +491,135 @@ footer a span {
   padding: 0;
 }
 
+.starters {
+  -webkit-animation: starters 200ms;
+          animation: starters 200ms;
+}
+
+@-webkit-keyframes starters {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes starters {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.dishes {
+  -webkit-animation: dishes 500ms;
+          animation: dishes 500ms;
+}
+
+@-webkit-keyframes dishes {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes dishes {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.desserts {
+  -webkit-animation: desserts 1000ms;
+          animation: desserts 1000ms;
+}
+
+@-webkit-keyframes desserts {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes desserts {
+  0% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+    opacity: .1;
+  }
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: .2;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 article {
   position: relative;
   margin-top: -40px;
@@ -568,13 +702,7 @@ article .element .describe .price {
   padding: 5px;
 }
 
-article .element .describe h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-article .element .describe p {
+article .element .describe h3, article .element .describe p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

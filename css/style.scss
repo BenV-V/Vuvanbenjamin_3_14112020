@@ -3,7 +3,14 @@ $second-color:#FF79DA;
 $third-color:#99E2D0;
 $background:#e2dedee5;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Shrikhand&display=swap');
-
+@mixin shadow{
+    box-shadow: 0 10px 20px #858685dc;
+}
+@mixin ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 /* Global */
 *{
 	margin:0;
@@ -156,6 +163,9 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 25px;
+    h2{
+        font-size: 1.8em;
+    }
     button{
         width: 350px;
         background-color: #F2F2F2;
@@ -196,9 +206,10 @@ section{
     width: 100%;
     h2{
         padding-top:60px;
+        font-size: 1.8em;
     }
-    .element{    		
-        box-shadow: 0 10px 20px #858685dc;
+    .element{
+        @include shadow;    		
         border-radius: 20px;
         color:black;
 		margin:20px 20px 20px 20px;
@@ -326,6 +337,63 @@ footer{
     border: none;
     padding:0;
 }
+.starters{
+    animation: starters 200ms;
+}
+@keyframes starters{
+    0% {
+        transform: translate(0,10px) ;
+        opacity: .1;
+    }
+    20% {
+        opacity: .1;
+    }    
+    40% {
+        opacity: .2;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.dishes{
+    animation: dishes 500ms;
+}
+@keyframes dishes{
+    0% {
+        transform: translate(0,10px) ;
+        opacity: .1;
+    }
+    20% {
+        opacity: .1;
+    }    
+    40% {
+        opacity: .2;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.desserts{
+    animation: desserts 1000ms;
+}
+@keyframes desserts{
+    0% {
+        transform: translate(0,10px) ;
+        opacity: .1;
+    }
+    20% {
+        opacity: .1;
+    }    
+    40% {
+        opacity: .2;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
 article{
     position: relative;
     margin-top: -40px;
@@ -352,7 +420,7 @@ article{
     .element{
         background: #ffffff;
         margin:20px 10px 20px 10px;
-        box-shadow: 0 10px 20px #858685dc;
+        @include shadow;
         border-radius: 20px;
         display: flex;
         animation-name: element;
@@ -366,28 +434,17 @@ article{
             width:100%;
             margin: 10px;
             display:flex;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            @include ellipsis;
             .content{
                 flex:1;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
+                @include ellipsis;
             }
             .price{
                 margin-top:15px;
                 padding:5px;
             }
-        h3{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        p{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+        h3, p{
+            @include ellipsis;
         }
     }
         
