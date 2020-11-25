@@ -1,16 +1,4 @@
-$primary-color:#9356DC;
-$second-color:#FF79DA;
-$third-color:#99E2D0;
-$background:#e2dedee5;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Shrikhand&display=swap');
-@mixin shadow{
-    box-shadow: 0 10px 20px #858685dc;
-}
-@mixin ellipsis{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
+@import "../variables/variables";
 /* Global */
 *{
 	margin:0;
@@ -230,9 +218,10 @@ section{
             position: absolute;
             margin-left: -100px;
             margin-top: 20px;
-            background-color: rgb(143, 238, 194);
+            background-color:rgb(145, 202, 184);
+            font-weight: bold;
             padding:8px;
-            color:rgb(88, 155, 124);
+            color:rgb(54, 167, 139)
         }
         .description{
             padding: 15px 20px 10px 10px;

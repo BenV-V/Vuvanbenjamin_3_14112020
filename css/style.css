@@ -333,9 +333,10 @@ section .element span {
   position: absolute;
   margin-left: -100px;
   margin-top: 20px;
-  background-color: #8feec2;
+  background-color: #91cab8;
+  font-weight: bold;
   padding: 8px;
-  color: #589b7c;
+  color: #36a78b;
 }
 
 section .element .description {

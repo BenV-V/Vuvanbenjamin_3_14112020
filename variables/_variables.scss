@@ -1,0 +1,13 @@
+$primary-color:#9356DC;
+$second-color:#FF79DA;
+$third-color:#99E2D0;
+$background:#e2dedee5;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Shrikhand&display=swap');
+@mixin shadow{
+    box-shadow: 0 10px 20px #858685dc;
+}
+@mixin ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
