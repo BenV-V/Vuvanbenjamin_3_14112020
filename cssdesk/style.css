@@ -49,9 +49,6 @@
 }
 
 .reserve {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 20px;
 }
 
