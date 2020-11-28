@@ -79,4 +79,15 @@ span {
     transition: transform 200ms ease-out 100ms;
     font-size: 20px;       
 }
-
+footer{
+    display: flex;
+    flex-direction: row;
+    img{
+    width: 20%;
+    padding-right: 50px;
+    }
+    a{
+        margin-left: 40px;
+    }
+    padding: 20px 0 20px 20px;
+}

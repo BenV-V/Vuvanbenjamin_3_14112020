@@ -116,4 +116,24 @@ span {
   transition: transform 200ms ease-out 100ms, -webkit-transform 200ms ease-out 100ms;
   font-size: 20px;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 0 20px 20px;
+}
+
+footer img {
+  width: 20%;
+  padding-right: 50px;
+}
+
+footer a {
+  margin-left: 40px;
+}
 /*# sourceMappingURL=style.css.map */
