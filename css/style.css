@@ -159,8 +159,8 @@ header i {
 #search {
   position: relative;
   background: #e2dedee5;
-  -webkit-box-shadow: inset 0px 11px 18px -18px #474646;
-          box-shadow: inset 0px 11px 18px -18px #474646;
+  -webkit-box-shadow: inset 0px 11px 18px -18px #757373;
+          box-shadow: inset 0px 11px 18px -18px #757373;
   margin-bottom: 40px;
 }
 
@@ -211,16 +211,16 @@ header i {
 
 .reserve h1 {
   padding: 0 20px 15px 20px;
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 2em;
+  font-weight: 1100;
   line-height: 1.2em;
 }
 
 .reserve p {
   padding: 0 10px 15px 10px;
   color: grey;
-  font-weight: 400;
-  font-size: 1.7em;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 .reserve .explore {
@@ -259,14 +259,14 @@ header i {
 }
 
 #use button {
-  width: 350px;
+  width: 85%;
   background-color: #F2F2F2;
   font-weight: bold;
   font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px auto 25px auto;
+  margin: 15px 10px 25px 30px;
   border-radius: 25px;
   -webkit-box-shadow: 0 5px 10px #d7dad6dc;
           box-shadow: 0 5px 10px #d7dad6dc;
@@ -355,7 +355,7 @@ section .element span {
 }
 
 section .element .description {
-  padding: 15px 20px 10px 20px;
+  padding: 7px 20px 10px 15px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -371,13 +371,13 @@ section .element .description {
 
 section .element .description h3 {
   font-weight: 900;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 section .element .description p {
   color: #686666;
-  font-weight: 400;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 1.3em;
 }
 
 section .element .description:link {
@@ -522,8 +522,8 @@ footer a span {
 }
 
 .starters {
-  -webkit-animation: starters 200ms;
-          animation: starters 200ms;
+  -webkit-animation: starters 300ms;
+          animation: starters 300ms;
 }
 
 @-webkit-keyframes starters {
@@ -565,8 +565,8 @@ footer a span {
 }
 
 .dishes {
-  -webkit-animation: dishes 500ms;
-          animation: dishes 500ms;
+  -webkit-animation: dishes 1400ms;
+          animation: dishes 1400ms;
 }
 
 @-webkit-keyframes dishes {
@@ -608,8 +608,8 @@ footer a span {
 }
 
 .desserts {
-  -webkit-animation: desserts 1000ms;
-          animation: desserts 1000ms;
+  -webkit-animation: desserts 2000ms;
+          animation: desserts 2000ms;
 }
 
 @-webkit-keyframes desserts {
@@ -681,7 +681,6 @@ article h1 i {
 
 article h2 {
   color: grey;
-  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -701,23 +700,23 @@ article .element {
 }
 
 article .element:nth-child(1) {
-  -webkit-animation-duration: 800ms;
-          animation-duration: 800ms;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
 }
 
 article .element:nth-child(2) {
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
 }
 
 article .element:nth-child(3) {
-  -webkit-animation-duration: 1200ms;
-          animation-duration: 1200ms;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
 }
 
 article .element:nth-child(4) {
-  -webkit-animation-duration: 1400ms;
-          animation-duration: 1400ms;
+  -webkit-animation-duration: 1100ms;
+          animation-duration: 1100ms;
 }
 
 article .element:hover {
@@ -749,7 +748,7 @@ article .element .describe .content {
 
 article .element .describe .price {
   margin-top: 30px;
-  padding: 5px 15px 5px 25px;
+  padding: 5px 0 5px 15px;
   font-weight: bold;
 }
 
@@ -760,11 +759,12 @@ article .element .describe h3, article .element .describe p {
 }
 
 article .element .describe h3 {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  font-weight: 900;
 }
 
 article .element .describe p {
-  font-size: 1.25em;
+  font-size: 1em;
   color: #5f5f5f;
 }
 
@@ -808,8 +808,8 @@ article .element :hover + .box span {
 
 @-webkit-keyframes element {
   0% {
-    -webkit-transform: translate(0, 20px);
-            transform: translate(0, 20px);
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px);
     opacity: .1;
   }
   20% {
@@ -827,8 +827,8 @@ article .element :hover + .box span {
 
 @keyframes element {
   0% {
-    -webkit-transform: translate(0, 20px);
-            transform: translate(0, 20px);
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px);
     opacity: .1;
   }
   20% {

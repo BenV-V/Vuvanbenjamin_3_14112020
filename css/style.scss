@@ -99,7 +99,7 @@ header{
 #search{
     position:relative;
     background: $background;
-    box-shadow: inset 0px 11px 18px -18px rgb(71, 70, 70);
+    box-shadow: inset 0px 11px 18px -18px rgb(117, 115, 115);
     margin-bottom: 40px;   
     input{
         width:100%; 
@@ -121,15 +121,15 @@ header{
 .reserve{
     h1{
         padding:0 20px 15px 20px;
-        font-size: 2.5em;
-        font-weight: 900;
+        font-size: 2em;
+        font-weight: 1100;
         line-height: 1.2em;
     }
     p{
       padding:0 10px 15px 10px;
       color:grey;
-      font-weight: 400;
-      font-size: 1.7em;  
+      font-weight: 500;
+      font-size: 1.2em;  
     } 
     text-align: center;
     line-height: 2em;
@@ -160,12 +160,12 @@ header{
         font-size: 1.8em;
     }
     button{
-        width: 350px;
+        width: 85%;
         background-color: #F2F2F2;
 	    font-weight: bold;
         font-size: 1.2em;
         display: flex;
-        margin: 15px auto 25px auto;
+        margin: 15px 10px 25px 30px;
         border-radius: 25px;
         box-shadow: 0 5px 10px #d7dad6dc;
         padding: 20px;
@@ -235,7 +235,7 @@ section{
             color:rgb(47, 143, 119)
         }
         .description{
-            padding: 15px 20px 10px 20px;
+            padding: 7px 20px 10px 15px;
             justify-content: space-around;
             display: flex;
             line-height: 2em;
@@ -243,12 +243,12 @@ section{
             color:black;
             h3{
                 font-weight: 900;
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
             p{
                 color:rgb(104, 102, 102);
-                font-weight: 400;
-                font-size: 1.5em;
+                font-weight: 500;
+                font-size: 1.3em;
             }
             &:link{ 
                 text-decoration:none;
@@ -352,7 +352,7 @@ footer{
     padding:0;
 }
 .starters{
-    animation: starters 200ms;
+    animation: starters 300ms;
 }
 @keyframes starters{
     0% {
@@ -371,7 +371,7 @@ footer{
     }
 }
 .dishes{
-    animation: dishes 500ms;
+    animation: dishes 1400ms;
 }
 @keyframes dishes{
     0% {
@@ -390,7 +390,7 @@ footer{
     }
 }
 .desserts{
-    animation: desserts 1000ms;
+    animation: desserts 2000ms;
 }
 @keyframes desserts{
     0% {
@@ -429,7 +429,6 @@ article{
     }
     h2{
         color:grey;
-        font-size: 1.3em;
         font-weight: 400;
     }
     .element{
@@ -439,10 +438,10 @@ article{
         border-radius: 20px;
         display: flex;
         animation-name: element;
-        &:nth-child(1){animation-duration: 800ms;}
-        &:nth-child(2){animation-duration: 1000ms;}
-        &:nth-child(3){animation-duration: 1200ms;}
-        &:nth-child(4){animation-duration: 1400ms;}
+        &:nth-child(1){animation-duration: 500ms;}
+        &:nth-child(2){animation-duration: 700ms;}
+        &:nth-child(3){animation-duration: 900ms;}
+        &:nth-child(4){animation-duration: 1100ms;}
         transform-origin: top;
         &:hover {
             background-color: lighten(#F2F2F2, 2);
@@ -460,17 +459,18 @@ article{
             }
             .price{
                 margin-top:30px;
-                padding:5px 15px 5px 25px;
+                padding:5px 0 5px 15px;
                 font-weight: bold;
             }
         h3, p{
             @include ellipsis;
         }
         h3{
-            font-size: 1.6em;
+            font-size: 1.2em;
+            font-weight: 900;
         }
         p{
-            font-size: 1.25em;
+            font-size: 1em;
             color:rgb(95, 95, 95);
         }
     }    
@@ -502,7 +502,7 @@ article{
 
 @keyframes element{
     0% {
-        transform: translate(0,20px) ;
+        transform: translate(0,25px) ;
         opacity: .1;
     }
     20% {

@@ -71,6 +71,10 @@ section {
   margin-top: -30px;
 }
 
+section .element span {
+  margin-left: -120px;
+}
+
 #restaurants {
   display: -ms-grid;
   display: grid;

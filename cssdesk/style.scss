@@ -44,6 +44,11 @@
 }
 section{
     margin-top: -30px;
+    .element{
+        span{
+            margin-left: -120px;
+        }
+    }
 }
 #restaurants{
     display: grid;
