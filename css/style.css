@@ -148,7 +148,7 @@ header i {
 /* Top page */
 .container {
   background: #F2F2F2;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 /* Recherche */
@@ -221,6 +221,7 @@ header i {
   color: grey;
   font-weight: 500;
   font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 .reserve .explore {
