@@ -164,6 +164,13 @@ header i {
   margin-bottom: 40px;
 }
 
+#search .icon {
+  position: absolute;
+  margin-left: 17%;
+  margin-top: 15px;
+  color: #666464;
+}
+
 #search input {
   width: 100%;
   height: 70px;
@@ -651,7 +658,7 @@ footer a span {
   }
 }
 
-article {
+.menus {
   position: relative;
   margin-top: -40px;
   background-color: #F2F2F2;
@@ -659,7 +666,7 @@ article {
   border-top-right-radius: 45px;
 }
 
-article h1 {
+.menus h1 {
   padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,7 +678,7 @@ article h1 {
           align-items: center;
 }
 
-article h1 i {
+.menus h1 i {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -680,12 +687,12 @@ article h1 i {
   margin-right: 50px;
 }
 
-article h2 {
+.menus h2 {
   color: grey;
   font-weight: 400;
 }
 
-article .element {
+.menus .element {
   background: #ffffff;
   margin: 20px 10px 20px 10px;
   -webkit-box-shadow: 0 10px 10px rgba(133, 133, 133, 0.2);
@@ -700,33 +707,33 @@ article .element {
           transform-origin: top;
 }
 
-article .element:nth-child(1) {
+.menus .element:nth-child(1) {
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-article .element:nth-child(2) {
+.menus .element:nth-child(2) {
   -webkit-animation-duration: 700ms;
           animation-duration: 700ms;
 }
 
-article .element:nth-child(3) {
+.menus .element:nth-child(3) {
   -webkit-animation-duration: 900ms;
           animation-duration: 900ms;
 }
 
-article .element:nth-child(4) {
+.menus .element:nth-child(4) {
   -webkit-animation-duration: 1100ms;
           animation-duration: 1100ms;
 }
 
-article .element:hover {
+.menus .element:hover {
   background-color: #f7f7f7;
   -webkit-box-shadow: 0 10px 20px rgba(133, 133, 133, 0.4);
           box-shadow: 0 10px 20px rgba(133, 133, 133, 0.4);
 }
 
-article .element .describe {
+.menus .element .describe {
   width: 100%;
   margin: 10px;
   display: -webkit-box;
@@ -737,7 +744,7 @@ article .element .describe {
   overflow: hidden;
 }
 
-article .element .describe .content {
+.menus .element .describe .content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -747,35 +754,35 @@ article .element .describe .content {
   line-height: 1.9em;
 }
 
-article .element .describe .price {
+.menus .element .describe .price {
   margin-top: 30px;
   padding: 5px 0 5px 15px;
   font-weight: bold;
 }
 
-article .element .describe h3, article .element .describe p {
+.menus .element .describe h3, .menus .element .describe p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-article .element .describe h3 {
+.menus .element .describe h3 {
   font-size: 1.2em;
   font-weight: 900;
 }
 
-article .element .describe p {
+.menus .element .describe p {
   font-size: 1em;
   color: #5f5f5f;
 }
 
-article .element :hover + .box {
+.menus .element :hover + .box {
   -webkit-transform: scale(1);
           transform: scale(1);
   background-color: #99e2d0;
 }
 
-article .element :hover + .box span {
+.menus .element :hover + .box span {
   -webkit-transform: translateY(0) rotate(360deg);
           transform: translateY(0) rotate(360deg);
   margin: 20px 40px 0 20px;

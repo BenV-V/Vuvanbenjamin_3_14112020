@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+/* Recherche */
+#search .icon {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 15px;
+  color: #666464;
+}
+
 /* Fonctionnement */
 #use {
   display: -webkit-box;
@@ -87,22 +95,22 @@ section .element span {
   float: right;
 }
 
-article .starters, article .dishes, article .desserts {
+.menus .starters, .menus .dishes, .menus .desserts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-article .starters .element, article .dishes .element, article .desserts .element {
+.menus .starters .element, .menus .dishes .element, .menus .desserts .element {
   width: 30%;
   height: 100px;
 }
 
-article .starters .element h3, article .dishes .element h3, article .desserts .element h3 {
+.menus .starters .element h3, .menus .dishes .element h3, .menus .desserts .element h3 {
   font-size: 1.2em;
 }
 
-article .starters .element p, article .dishes .element p, article .desserts .element p {
+.menus .starters .element p, .menus .dishes .element p, .menus .desserts .element p {
   font-size: 1.2em;
 }
 
